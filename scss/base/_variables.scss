@@ -1,0 +1,25 @@
+@mixin theme($theme) {
+  @if $theme == dark {
+    --bg: #0f1724;
+    --card: #0b1220;
+    --muted: #9aa4b2;
+    --accent: #06b6d4;
+    --glass: rgba(255, 255, 255, 0.03);
+    --text: #f0f6fc;
+  } @else if $theme == light {
+    --bg: #f6f8fa;
+    --card: #ffffff;
+    --muted: #4a5568;
+    --accent: #06b6d4;
+    --glass: rgba(0, 0, 0, 0.05);
+    --text: #1a202c;
+  }
+}
+
+:root {
+  @include theme(dark);
+}
+
+[data-theme='light'] {
+  @include theme(light);
+}
