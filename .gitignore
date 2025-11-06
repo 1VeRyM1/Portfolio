@@ -1,1 +1,9 @@
-.style.min.css.map
+# Ignore all SCSS source files
+*.scss
+
+# Ignore source maps
+*.map
+
+# Ignore the .gitignore file itself (root)
+# Use leading slash to target the repo root
+/.gitignore

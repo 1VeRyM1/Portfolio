@@ -3,7 +3,7 @@
 
 
 :root {
-  --font-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    --font-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
@@ -23,3 +23,8 @@ body {
 
 @import 'components/element';
 @import 'components/header';
+@import 'components/hero';
+@import 'components/projects';
+@import 'components/about';
+@import 'components/contact';
+@import 'components/footer';

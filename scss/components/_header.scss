@@ -21,22 +21,22 @@
         align-items: center;
         gap: 30px;
     }
-    &__menu {
-        display: flex;
-        justify-content: space-between;
-        gap: 30px;
-    }
-    &__menu-link {
-        color: var(--muted);
-        transition: 0.3s all;
-    }
-    &__menu-link:hover {
-        color: var(--text);
-        text-decoration: underline;
-    }
+    // &__menu {
+    //     display: flex;
+    //     justify-content: space-between;
+    //     gap: 30px;
+    // }
+    // &__menu-link {
+    //     color: var(--muted);
+    //     transition: 0.3s all;
+    // }
+    // &__menu-link:hover {
+    //     color: var(--text);
+    //     text-decoration: underline;
+    // }
     &__action {
         padding: 10px 15px;
         background-color: var(--glass);
-        border-radius: 5px;
+        border-radius: 10px;
     }
 }
