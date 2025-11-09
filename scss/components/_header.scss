@@ -10,6 +10,7 @@
     &__logo {
         color: var(--muted);
         font-size: 18px;
+        margin-right: 30px;
         strong {
             color: var(--text);
             font-weight: 700;
@@ -19,24 +20,29 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        gap: 20px;
+        gap: 15px;
     }
-    // &__menu {
-    //     display: flex;
-    //     justify-content: space-between;
-    //     gap: 30px;
-    // }
-    // &__menu-link {
-    //     color: var(--muted);
-    //     transition: 0.3s all;
-    // }
-    // &__menu-link:hover {
-    //     color: var(--text);
-    //     text-decoration: underline;
-    // }
     &__action {
         padding: 10px 15px;
         background-color: var(--glass);
         border-radius: 10px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .header {
+        &__container {
+            flex-direction: column;
+            gap: 15px;
+        }
+        &__logo {
+            font-size: 16px;
+            margin-right: 0;
+            text-align: center;
+        }
+        &__action {
+            font-size: 14px;
+        }
     }
 }

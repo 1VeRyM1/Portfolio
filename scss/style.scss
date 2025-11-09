@@ -3,7 +3,7 @@
 
 
 :root {
-    --font-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  	--font-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 }
 
 body {
@@ -21,35 +21,35 @@ body {
 }
 
 .theme-toggle {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 44px;
-  height: 44px;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--glass);
-  color: var(--muted);
-  cursor: pointer;
-  transition: background-color .18s ease, color .18s ease, transform .12s ease;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 10px;
+	border: none;
+	background-color: var(--glass);
+	color: var(--muted);
+	cursor: pointer;
+	transition: background-color .18s ease, color .18s ease, transform .12s ease;
 }
 
 .theme-toggle .theme-icon {
-  width: 18px;
-  height: 18px;
-  display: block;
+	width: 18px;
+	height: 18px;
+	display: block;
 }
 
 .theme-toggle[aria-pressed="true"] {
-  color: var(--accent);
-  background: linear-gradient(90deg, var(--accent), #3b82f6);
-  border-color: transparent;
+	color: var(--accent);
+	background: linear-gradient(90deg, var(--accent), #3b82f6);
+	border-color: transparent;
 }
 
 .projects__technology.is-active {
-  background: linear-gradient(90deg, var(--accent), #3b82f6);
-  color: #061021;
-  border-color: transparent;
+	background: linear-gradient(90deg, var(--accent), #3b82f6);
+	color: #f0f6fc;
+	border-color: transparent;
 }
 
 
@@ -58,16 +58,43 @@ body {
 [data-theme=light] .about__aside,
 [data-theme=light] .hero__skills,
 [data-theme=light] .contact__form {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme=light] .hero__button,
 [data-theme=light] .contact__form-button {
-  background: linear-gradient(90deg, var(--accent), #3b82f6);
-  color: white;
+	background: linear-gradient(90deg, var(--accent), #3b82f6);
+	color: white;
 }
 
+.btn-animation {
+	transition: 0.2s all ease-in-out;
+	&:hover {
+		opacity: 0.7;
+		transform: scale(1.03);
+	}
+}
 
+.tag-animation {
+	transition: 0.2s transform ease-in-out;
+	&:hover {
+		transform: scale(0.97);
+	}
+}
+
+.card-animation {
+	transition: 0.25s transform ease-in-out;
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+
+@media (max-width: 480px) {
+	.theme-toggle .theme-icon {
+		width: 16px;
+		height: 16px;
+	}
+}
 
 @import 'components/element';
 @import 'components/header';
