@@ -7,12 +7,12 @@
     --glass: rgba(255, 255, 255, 0.03);
     --text: #f0f6fc;
   } @else if $theme == light {
-    --bg: #f6f8fa;
+    --bg: #f3f4f6;
     --card: #ffffff;
-    --muted: #4a5568;
-    --accent: #06b6d4;
-    --glass: rgba(0, 0, 0, 0.05);
-    --text: #1a202c;
+    --muted: #555b66;
+    --accent: #0ea5e9;
+    --glass: rgba(0, 0, 0, 0.08);
+    --text: #111827;  
   }
 }
 

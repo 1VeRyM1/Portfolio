@@ -20,6 +20,54 @@ body {
     margin: 0 auto;
 }
 
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--glass);
+  color: var(--muted);
+  cursor: pointer;
+  transition: background-color .18s ease, color .18s ease, transform .12s ease;
+}
+
+.theme-toggle .theme-icon {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+.theme-toggle[aria-pressed="true"] {
+  color: var(--accent);
+  background: linear-gradient(90deg, var(--accent), #3b82f6);
+  border-color: transparent;
+}
+
+.projects__technology.is-active {
+  background: linear-gradient(90deg, var(--accent), #3b82f6);
+  color: #061021;
+  border-color: transparent;
+}
+
+
+[data-theme=light] .hero__aside,
+[data-theme=light] .projects__wrapper,
+[data-theme=light] .about__aside,
+[data-theme=light] .hero__skills,
+[data-theme=light] .contact__form {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+[data-theme=light] .hero__button,
+[data-theme=light] .contact__form-button {
+  background: linear-gradient(90deg, var(--accent), #3b82f6);
+  color: white;
+}
+
+
 
 @import 'components/element';
 @import 'components/header';
@@ -28,3 +76,4 @@ body {
 @import 'components/about';
 @import 'components/contact';
 @import 'components/footer';
+@import 'components/modal';
